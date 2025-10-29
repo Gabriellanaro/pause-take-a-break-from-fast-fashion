@@ -4,7 +4,6 @@
   Page showing detailed information about a single event.
   Fetches data from events.json using the event ID from URL.
 */
-
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 
@@ -27,13 +26,8 @@ function EventDetail() {
       });
   }, [id]);
 
-  if (loading) {
-    return <p className="text-center text-gray-500 mt-8">Loading event...</p>;
-  }
-
-  if (!event) {
-    return <p className="text-center text-gray-500 mt-8">Event not found.</p>;
-  }
+  if (loading) return <p className="text-center text-gray-500 mt-8">Loading...</p>;
+  if (!event) return <p className="text-center text-gray-500 mt-8">Event not found.</p>;
 
   return (
     <section className="space-y-4 pb-16">
@@ -47,14 +41,11 @@ function EventDetail() {
           alt={event.title}
           className="w-full h-64 object-cover"
         />
-
         <div className="p-4 space-y-2">
           <h2 className="text-2xl font-semibold">{event.title}</h2>
           <p className="text-sm text-gray-500">{event.date}</p>
           <p className="text-gray-700">{event.description}</p>
-          <p className="text-sm text-gray-500 italic">
-            {event.location.address}
-          </p>
+          <p className="text-sm text-gray-500 italic">{event.location.address}</p>
         </div>
       </div>
     </section>

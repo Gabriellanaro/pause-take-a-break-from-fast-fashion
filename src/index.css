@@ -8,3 +8,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.leaflet-container {
+  height: 80vh !important;
+  width: 100% !important;
+  border-radius: 1rem;
+  border: 1px solid #e5e7eb; /* gray-200 */
+  z-index: 0;
+}

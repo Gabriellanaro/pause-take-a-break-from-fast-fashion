@@ -4,14 +4,12 @@
   Displays interactive map (React Leaflet) showing event markers.
   Fetches data from /data/events.json and renders one marker per event.
 */
-
 import React, { useEffect, useState } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import { Link } from "react-router-dom";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 
-// Fix for missing default marker icons in Leaflet (important)
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
   iconRetinaUrl:
@@ -30,18 +28,18 @@ function MapComponent() {
       .catch((err) => console.error("Error loading events for map:", err));
   }, []);
 
-  const center = [55.6761, 12.5683]; // Copenhagen center coordinates
+  const center = [55.6761, 12.5683];
 
   return (
     <MapContainer
       center={center}
       zoom={12}
-      className="h-[80vh] w-full rounded-xl border border-gray-200"
       scrollWheelZoom={false}
+      className="h-[80vh] w-full bg-blue-100"
     >
       <TileLayer
-        attribution='&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
+        attribution='&copy; <a href="https://carto.com/">Carto</a>'
       />
 
       {events.map((event) => (
