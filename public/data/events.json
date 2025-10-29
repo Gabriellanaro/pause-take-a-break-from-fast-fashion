@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Nørrebro Vintage Market",
+    "date": "2025-11-10",
+    "description": "A cozy weekend flea market with 30+ sellers, live music, and coffee stalls.",
+    "image": "/images/market1.jpg",
+    "location": {
+      "lat": 55.6895,
+      "lng": 12.5548,
+      "address": "Stefansgade 35, Nørrebro"
+    }
+  },
+  {
+    "id": 2,
+    "title": "Doorstep Rack Sale - Amager",
+    "date": "2025-11-12",
+    "description": "Spontaneous clothing rack outside the house — bring your own bag!",
+    "image": "/images/market2.jpg",
+    "location": {
+      "lat": 55.6497,
+      "lng": 12.6103,
+      "address": "Amagerbrogade 145, Amager"
+    }
+  },
+  {
+    "id": 3,
+    "title": "Pop-up Vintage Store",
+    "date": "2025-11-18",
+    "description": "Three-day pop-up shop with curated vintage pieces and accessories.",
+    "image": "/images/market3.jpg",
+    "location": {
+      "lat": 55.6761,
+      "lng": 12.5683,
+      "address": "Købmagergade 40, City Center"
+    }
+  }
+]

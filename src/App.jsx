@@ -6,6 +6,7 @@
   Handles global layout (Header, etc.).
 */
 
+import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 // Import pages

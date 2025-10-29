@@ -1,0 +1,41 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE / editor folders
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.swp
+
+# Local virtual environment (es. se "pause" è un venv Python)
+pause/
+venv/
+.env/
+
+# Backup files
+*.bak
+
+# Lock files (opzionale, dipende se vuoi versionarli)
+# package-lock.json
+# yarn.lock

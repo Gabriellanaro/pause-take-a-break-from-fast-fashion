@@ -5,6 +5,8 @@
   Displays app title, navigation icons, or menu.
 */
 
+import React from "react";
+
 function Header() {
   return (
     <header className="bg-white shadow-sm border-b border-gray-200 py-3 px-4 sticky top-0 z-50">
