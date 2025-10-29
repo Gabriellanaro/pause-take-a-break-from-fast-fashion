@@ -1,0 +1,9 @@
+/* 
+  index.css
+  ──────────
+  Global stylesheet for PAUSE web app.
+  Includes Tailwind base, components, and utilities.
+*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
