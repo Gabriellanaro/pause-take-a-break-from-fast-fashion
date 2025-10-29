@@ -33,32 +33,6 @@ una **Single Page Application (SPA)** sviluppata in **React + Vite**, con una ma
 
 ---
 
-## 🧱 Struttura del Progetto
-pause-take-a-break-from-fast-fashion/
-│
-├─ public/ → File statici accessibili dal browser
-│ ├─ data/events.json → Mock database con gli eventi
-│ └─ images/ → Immagini usate nel feed e nei popup
-│
-├─ src/ → Codice React principale
-│ ├─ pages/ → Pagine principali gestite dal Router
-│ │ ├─ Feed.jsx → Lista eventi
-│ │ ├─ Map.jsx → Mappa interattiva
-│ │ └─ EventDetail.jsx → Dettaglio evento
-│ │
-│ ├─ components/ → Blocchi riutilizzabili dell’interfaccia
-│ │ ├─ Header.jsx → Header fisso
-│ │ ├─ EventCard.jsx → Card evento nel feed
-│ │ └─ MapComponent.jsx→ Mappa interattiva con marker
-│ │
-│ ├─ App.jsx → Router principale + layout globale
-│ ├─ main.jsx → Entry point React (monta App su index.html)
-│ └─ index.css → Stili globali + Tailwind + fix Leaflet
-│
-├─ index.html → File HTML principale
-├─ vite.config.js → Configurazione build/dev
-└─ package.json → Dipendenze e script npm
-
 ## 🧩 Componenti chiave
 
 | Componente | Funzione |
